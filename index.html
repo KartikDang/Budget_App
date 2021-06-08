@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!--FontAwesome-->
+    <script
+      src="https://kit.fontawesome.com/ed2875010c.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    
+    <div class="outer">
+        <div class="left">
+            <h1>Budget App</h1>
+            <div class="box_1">
+                <label for="Budget">Please Enter Your Budget</label>
+                <br>
+                <input type="number" class="budget">
+                <br>
+                <button class="Cal">Calculate</button>
+            </div>
+
+            <div class="box_2">
+                <label for="Name">Please Enter Your Expense (Name)</label>
+                <input type="text" class="name">
+
+                <label for="Amt">Please Enter Expense Amount</label>
+                <input type="number" class="amount">
+                <br>
+                <button class="Add">Add Expense</button>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="container cont_1">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h2 class="topic" style="color: #333232;">Budget</h2>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <h2 class="topic" style="color: #333232;">Expenses</h2>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <h2 class="topic" style="color: #333232;">Balance</h2>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container cont_2">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <i class="fas fa-money-bill-alt fa-3x"></i>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <i class="far fa-credit-card fa-3x"></i>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <i class="fas fa-dollar-sign fa-3x"></i>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="container cont_3">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h2 class="dollar_1" style="color:#317A23 ;">$0</h2>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <h2 class="dollar_2" style="color: #B90C08;">$0</h2>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <h2 class="dollar_3" style="color: #333232">$0</h2>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="output_window">
+                <div class="conatiner">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h4>Expense Title</h4>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <h4>Expense Value</h4>
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+                    
+
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
